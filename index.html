@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ismihana</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/ewbp.png" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="position-container">
+      <canvas id="nokey" width="800" height="800"></canvas>
+      <div class="overlay-content">
+        <header>
+          <nav>
+            <div id="menu">
+              <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+              </div>
+              <nav class="nav" id="nav">
+                <ul>
+                  <li>
+                    <a href="#" id="home-link"> Home </a>
+                  </li>
+                  <li>
+                    <a href="#" id="about-link"> About me </a>
+                  </li>
+                  <li>
+                    <a href="#" id="projects-link"> Projects </a>
+                  </li>
+                  <li>
+                    <a href="#" id="contact-link"> Contacts </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu-bg" id="menu-bg"></div>
+          </nav>
+        </header>
+
+        <div class="home-container" id="home-section">
+          <section class="home-section">
+            <div class="home-info">
+              <div class="typingAnimation">
+                <h1 class="typed"></h1>
+              </div>
+              <p class="webdev">
+                Rising web developer from Bosnia & Herzegovina.
+              </p>
+              <p class="quote">
+                "The future belongs to those who believe in the beauty of their
+                dreams." - Eleanor Roosevelt
+              </p>
+            </div>
+            <img class="photo" src="../imgs/home-photo.jpg" />
+          </section>
+        </div>
+        <section class="about-me-section">
+          <div
+            class="about-me-container"
+            id="about-section"
+            style="display: none"
+          >
+            <h1 class="heading1">Everything about me!</h1>
+            <div class="hobby-container">
+              <div class="hobby-image image1"></div>
+              <p class="my-hobby-text">
+                I'm currently working on widening my skills, from HTML, CSS, and
+                JavaScript to learning new things like backend development and
+                modern frameworks. This will help me stay up-to-date with the
+                latest trends in web development and improve my overall
+                proficiency.
+              </p>
+            </div>
+            <div class="hobby-container">
+              <div class="hobby-image image2"></div>
+              <p class="my-hobby-text">
+                I'm currently learning React to build more dynamic and efficient
+                user interfaces. Mastering React will allow me to create more
+                robust and scalable web applications. It will also enable me to
+                collaborate more effectively on modern web projects.
+              </p>
+            </div>
+            <div class="hobby-container">
+              <div class="hobby-image image3"></div>
+              <p class="my-hobby-text">
+                Learning Express.js and Node.js is crucial for refining my
+                skills in constructing dynamic and efficient server-side
+                applications. Mastering these technologies will enable me to
+                build more resilient and scalable backend systems. Moreover, it
+                will enhance my proficiency in collaborating on contemporary web
+                projects and seamlessly integrating with front-end frameworks.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="projects-section">
+          <div class="projectsscontainer">
+            <div class="projects-container" id="projects-section">
+              <div class="project-card">
+                <img class="project-imgs"
+                  src="/imgs/vl-gradnja.jpg"
+                  alt="Project Image 1"
+                />
+                <div class="project-info">
+                  <h3 class="project-title">Vlasic Gradnja</h3>
+                  <p class="project-description">
+                   First project!
+                  </p>
+                  <div class="technologies-used">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                  </div>
+                  <a href="project-link1.html" class="project-link"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <div class="project-card">
+                <img class="project-imgs"
+                  src="./imgs/chess.PNG"
+                  alt="Project Image 2"
+                />
+                <div class="project-info">
+                  <h3 class="project-title">Chess</h3>
+                  <p class="project-description">
+                    Basic chess game (pink design)
+                  </p>
+                  <div class="technologies-used">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                  </div>
+                  <a href="project-link2.html" class="project-link"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-section">
+          <div class="contact-section-container" id="contact-section">
+            <div class="decor">
+              <div
+                class="circle"
+                style="top: 20%; left: 30%; width: 100px; height: 100px"
+              ></div>
+              <div
+                class="circle"
+                style="top: 50%; left: 70%; width: 80px; height: 80px"
+              ></div>
+              <div
+                class="circle"
+                style="top: 80%; left: 10%; width: 120px; height: 120px"
+              ></div>
+              <div class="line" style="top: 40%; left: 5%"></div>
+              <div class="line" style="top: 70%; left: 70%"></div>
+            </div>
+            <div class="contact-container">
+              <div class="decor">
+                <div
+                  class="circle"
+                  style="top: 20%; left: 30%; width: 100px; height: 100px"
+                ></div>
+                <div
+                  class="circle"
+                  style="top: 50%; left: 70%; width: 80px; height: 80px"
+                ></div>
+                <div
+                  class="circle"
+                  style="top: 80%; left: 10%; width: 120px; height: 120px"
+                ></div>
+                <div class="line" style="top: 40%; left: 5%"></div>
+                <div class="line" style="top: 70%; left: 70%"></div>
+              </div>
+              <div class="contact-container">
+                <form class="contact-form" id="contact-form">
+                  <h1>Contact Me</h1>
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <label for="message">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                  <button type="submit">
+                    <i class="far fa-paper-plane"></i> Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

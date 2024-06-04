@@ -1,0 +1,108 @@
+.quote {
+  font-family: "canItalic";
+  font-size: 20px;
+}
+.home-section {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 10vh;
+  height: 90vh;
+}
+
+.photo {
+
+  height: 50vh;
+  border-radius: 10%;
+  width: auto;
+  overflow: hidden;
+}
+.home-info {
+  font-size: large;
+}
+.typingAnimation {
+  display: inline-block;
+  font-size: 24px;
+}
+
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  display: inline-block;
+  animation: typing 6s steps(30, start) infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50%,
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+.webdev {
+  font-size: 20px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .home-section {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+  .typed {
+    overflow: visible;
+    border: none;
+    animation: none;
+    text-align: center;
+    text-wrap: wrap;
+    height: 10vh;
+    display: block;
+    z-index: 0;
+    animation: fadeInOut 6s steps(30, start) infinite;
+  }
+  .webdev {
+    margin-top: 15vh;
+  }
+  .home-info {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0%;
+    }
+    50%,
+    60% {
+      opacity: 100%;
+    }
+    100% {
+      opacity: 0%;
+    }
+  }
+}

@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Candara";
+  src: url("fonts/Candara.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CanItalic";
+  src: url("fonts/Candara_Bold_Italic.woff") format("woff");
+}
+.quote {
+  font-family: "CanItalic";
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "canItalic", sans-serif
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  z-index: -2;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+canvas {
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+p,
+h1,
+button,
+a,
+ul {
+  pointer-events: fill;
+}
+.overlay-content {
+  position: absolute;
+  top: 0%;
+  color: white;
+  z-index: 10;
+  pointer-events: none;
+}
+header {
+  background-color: rgba(0, 0, 0, 0.644);
+  position: fixed;
+  width: 100vw;
+  margin: 0px;
+  height: 10vh;
+  z-index: 2;
+}
+ul,
+li,
+a {
+  color: white;
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  width: auto;
+  text-decoration: none;
+  margin-right: 1vw;
+}
+.position-container {
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  #menu {
+    z-index: 3;
+    pointer-events: fill;
+  }
+
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+  }
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(207, 255, 4);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  #bar1 {
+    transform: translateY(-4px);
+  }
+
+  #bar3 {
+    transform: translateY(4px);
+  }
+
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+
+  .nav ul {
+    padding: 0 22px;
+  }
+
+  .nav li {
+    z-index: 200;
+    list-style: none;
+    padding: 12px 0;
+  }
+
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .nav li a:hover {
+    font-weight: bold;
+  }
+
+  .menu-bg,
+  #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, rgb(141, 167, 27), rgb(207, 255, 4));
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%, -30%);
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
