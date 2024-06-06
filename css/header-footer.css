@@ -44,7 +44,6 @@ ul {
   color: white;
   z-index: 10;
   pointer-events: none;
-  overflow: auto;
 }
 header {
   background-color: rgba(0, 0, 0, 0.644);

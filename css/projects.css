@@ -1,5 +1,4 @@
 .projectsscontainer {
-  height: 120vh;
   width: 100vw;
   position: absolute;
   top: 10vh;
@@ -43,11 +42,13 @@
 .project-title {
   font-size: 1.5em;
   margin-bottom: 10px;
+  color: #fff;
 }
 
 .project-description {
   font-size: 1em;
   margin-bottom: 15px;
+  color: #ccc;
 }
 
 .technologies-used span {
@@ -107,5 +108,13 @@
     width: calc(100% - 40px);
     margin-right: 20px;
     margin-left: 20px;
+  }
+
+  .projects-container {
+    overflow: visible;
+    white-space: normal;
+  }
+  .overlay-content {
+    overflow-y: visible;
   }
 }
